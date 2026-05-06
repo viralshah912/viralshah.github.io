@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Viral Shah - Lead iOS Engineer | 9+ years building banking apps for 2.5M+ users">
-    <meta name="keywords" content="iOS Developer, Swift, SwiftUI, Mobile Banking, Fintech">
     <title>Viral Shah - Lead iOS Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%230066ff'>V</text></svg>">
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">VS</div>
+            <div class="logo">
+                <div class="logo-circle">V</div>
+                <span>Viral Shah</span>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -34,35 +39,66 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
         <div class="hero-content">
-            <h1 class="hero-title">Viral Shah</h1>
-            <p class="hero-subtitle">Lead iOS Engineer | 9+ Years | Banking Apps at Scale</p>
-            <p class="hero-description">
-                Architecting secure, high-performance iOS platforms serving 2.5M+ users.
-                Expertise in Swift/SwiftUI, system design, and technical leadership.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="assets/Viral_Shah_Resume_iOS.pdf" class="btn btn-secondary" download>Download Resume</a>
+            <div class="hero-profile">
+                <div class="profile-image">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Professional avatar illustration -->
+                        <defs>
+                            <linearGradient id="profileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Background circle -->
+                        <circle cx="100" cy="100" r="95" fill="url(#profileGrad)" />
+                        <!-- Head -->
+                        <circle cx="100" cy="70" r="25" fill="white" />
+                        <!-- Body -->
+                        <path d="M 75 95 Q 75 100 80 110 L 120 110 Q 125 100 125 95" fill="white" />
+                        <!-- Shoulders -->
+                        <ellipse cx="100" cy="115" rx="35" ry="20" fill="white" opacity="0.9" />
+                    </svg>
+                </div>
+                <h1 class="hero-title">Viral Shah</h1>
+                <p class="hero-subtitle">Lead iOS Engineer</p>
+                <p class="hero-description">Architecting secure, high-performance mobile banking platforms serving 2.5M+
+                    users</p>
             </div>
+
             <div class="hero-stats">
-                <div class="stat">
-                    <h3>2.5M+</h3>
-                    <p>Active Users</p>
+                <div class="stat-item">
+                    <div class="stat-number">9+</div>
+                    <div class="stat-label">Years</div>
                 </div>
-                <div class="stat">
-                    <h3>9+</h3>
-                    <p>Years Experience</p>
+                <div class="stat-item">
+                    <div class="stat-number">2.5M</div>
+                    <div class="stat-label">Users</div>
                 </div>
-                <div class="stat">
-                    <h3>31%</h3>
-                    <p>Bug Reduction</p>
+                <div class="stat-item">
+                    <div class="stat-number">31%</div>
+                    <div class="stat-label">Bug ↓</div>
                 </div>
-                <div class="stat">
-                    <h3>82%</h3>
-                    <p>Code Coverage</p>
+                <div class="stat-item">
+                    <div class="stat-number">82%</div>
+                    <div class="stat-label">Coverage</div>
                 </div>
             </div>
+
+            <div class="hero-cta">
+                <a href="#work" class="cta-button primary">View My Work</a>
+                <a href="assets/Viral_Shah_Resume_iOS.pdf" class="cta-button secondary" download>Download CV</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
         </div>
     </section>
 
@@ -70,341 +106,418 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Lead iOS Engineer at Capgemini</h3>
-                    <p>
-                        I'm a passionate iOS engineer with a proven track record of building and scaling mobile banking
-                        platforms.
-                        Over 9+ years, I've worked with industry leaders like Barclays, HSBC, and Co-op Bank, delivering
-                        secure,
-                        high-performance features that serve millions of users daily.
-                    </p>
-                    <h4>Key Achievements:</h4>
-                    <ul class="achievements">
-                        <li>✓ Architected payment flows serving 2.5M+ active users with PSD2 compliance</li>
-                        <li>✓ Reduced payment transaction failures by 22% through optimization</li>
-                        <li>✓ Cut CI/CD build times by 40% (18→11 mins) enabling 15+ deployments/week</li>
-                        <li>✓ Improved app startup time by 35% through Swift profiling & lazy-loading</li>
-                        <li>✓ Led mentorship: 4 junior engineers promoted to senior roles</li>
-                        <li>✓ Established code review culture: 31% bug reduction, 82% test coverage</li>
-                        <li>✓ Handled real-time transactions: 99.8% delivery rate, <200ms latency</li>
-                    </ul>
 
-                    <h4>Professional Background:</h4>
-                    <p>
-                        <strong>Capgemini (Aug 2023 - Present):</strong> Lead iOS Engineer architecting payment
-                        platforms for Barclays<br>
-                        <strong>Capgemini (Feb 2022 - Aug 2023):</strong> Software Consultant building HSBC retail
-                        banking platform<br>
-                        <strong>Rishabh Software (Jun 2021 - Jan 2022):</strong> Sr iOS Engineer, legacy-to-modern
-                        migration<br>
-                        <strong>Stocktake Online (Jan 2019 - Apr 2021):</strong> iOS Engineer, 2M+ downloads inventory
-                        app<br>
-                        <strong>Bit01 Techplode & AGILE Infoways (Apr 2017 - Dec 2018):</strong> Jr iOS Engineer, 4
-                        consumer apps shipped
-                    </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Current Role</h3>
+                    <p>Lead iOS Engineer at Capgemini, architecting payment platforms for Barclays serving 2.5M+ active
+                        users with PSD2 compliance.</p>
+                </div>
 
-                    <p style="margin-top: 20px;">
-                        Beyond code, I'm a technical writer on Medium covering Swift internals, SwiftUI patterns, and
-                        production engineering.
-                        I'm passionate about mentoring junior engineers and establishing engineering practices that
-                        scale.
-                    </p>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Expertise</h3>
+                    <p>Swift/SwiftUI system design, performance optimization, CI/CD automation, security architecture,
+                        and technical team leadership.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">👥</div>
+                    <h3>Leadership</h3>
+                    <p>Mentored 4 junior engineers to senior roles within 18 months. Established code review culture
+                        reducing bugs by 31%.</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Impact</h3>
+                    <p>Reduced payment failures by 22%, improved app startup by 35%, cut CI/CD build times by 40%,
+                        achieved 82% code coverage.</p>
+                </div>
+            </div>
+
+            <div class="about-journey">
+                <h3>My Journey</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2023 - Present</h4>
+                            <p><strong>Lead iOS Engineer @ Capgemini</strong></p>
+                            <p>Architecting Barclays payment platform, mentoring senior engineers, optimizing
+                                performance</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2022 - 2023</h4>
+                            <p><strong>Software Consultant @ Capgemini</strong></p>
+                            <p>Built HSBC retail banking platform, real-time notifications, security audits</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2021 - 2022</h4>
+                            <p><strong>Senior iOS Engineer @ Rishabh Software</strong></p>
+                            <p>Legacy to Swift migration, mentorship, improved crash rate from 2.1% to 0.3%</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2019 - 2021</h4>
+                            <p><strong>iOS Engineer @ Stocktake Online</strong></p>
+                            <p>2M+ downloads, offline-first sync, 28% memory optimization</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <span class="timeline-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2017 - 2019</h4>
+                            <p><strong>Junior iOS Engineer @ Early-Stage Startups</strong></p>
+                            <p>Built 4 consumer apps, learned full product lifecycle</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Work Section -->
+    <section id="work" class="work">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
 
-            <!-- GSRTC App -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>GSRTC - Multi-Language Transport App</h3>
-                    <p class="project-role">Personal iOS Project</p>
-                </div>
-
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Overview</h4>
-                        <p>
-                            A comprehensive iOS application for Gujarat State Road Transport Corporation (GSRTC)
-                            showcasing advanced SwiftUI implementation with multi-language support (English, Hindi,
-                            Gujarati).
-                        </p>
-
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>🌍 <strong>Multi-Language Support:</strong> Seamless switching between English, Hindi,
-                                and Gujarati</li>
-                            <li>📱 <strong>Modern SwiftUI UI:</strong> Clean, intuitive interface with smooth animations
-                            </li>
-                            <li>🎨 <strong>Responsive Design:</strong> Optimized for all iPhone sizes and orientations
-                            </li>
-                            <li>⚡ <strong>Performance Optimized:</strong> Lazy loading and efficient state management
-                            </li>
-                            <li>🔄 <strong>Real-time Data:</strong> Integration with transport schedules and
-                                availability</li>
-                        </ul>
-
-                        <h4>Tech Stack</h4>
-                        <p>
-                            <span class="tech-badge">Swift</span>
-                            <span class="tech-badge">SwiftUI</span>
-                            <span class="tech-badge">Localization</span>
-                            <span class="tech-badge">MVVM Pattern</span>
-                            <span class="tech-badge">Combine</span>
-                        </p>
-                    </div>
-
-                    <div class="project-carousel">
-                        <div class="carousel-wrapper">
-                            <div class="carousel-container">
-                                <div class="carousel-inner" id="carouselInner">
-                                    <!-- Screenshots will be loaded here by JavaScript -->
+            <!-- Project 1: GSRTC -->
+            <div class="project-showcase">
+                <div class="project-visual gsrtc">
+                    <div class="device-frame">
+                        <div class="device-header"></div>
+                        <div class="device-content">
+                            <div class="app-screen">
+                                <div class="screen-header">GSRTC Transport</div>
+                                <div class="language-indicator">
+                                    <span class="lang-badge active">EN</span>
+                                    <span class="lang-badge">HI</span>
+                                    <span class="lang-badge">GU</span>
                                 </div>
-                                <button class="carousel-prev" onclick="prevSlide()">❮</button>
-                                <button class="carousel-next" onclick="nextSlide()">❯</button>
-                            </div>
-                            <div class="carousel-indicators">
-                                <div class="indicator-group">
-                                    <label class="language-label">
-                                        <input type="radio" name="language" value="english" checked
-                                            onchange="switchLanguage('english')">
-                                        English
-                                    </label>
-                                    <label class="language-label">
-                                        <input type="radio" name="language" value="hindi"
-                                            onchange="switchLanguage('hindi')">
-                                        Hindi
-                                    </label>
-                                    <label class="language-label">
-                                        <input type="radio" name="language" value="gujarati"
-                                            onchange="switchLanguage('gujarati')">
-                                        Gujarati
-                                    </label>
+                                <div class="app-content">
+                                    <div class="app-item">🚌 Bus Bookings</div>
+                                    <div class="app-item">📍 Routes</div>
+                                    <div class="app-item">🕐 Schedules</div>
+                                    <div class="app-item">💳 Payments</div>
                                 </div>
-                                <div class="carousel-dots" id="carouselDots"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-details">
+                    <h3>GSRTC Multi-Language Transport App</h3>
+                    <p class="project-type">Personal iOS Project</p>
+                    <p>A comprehensive transport booking application showcasing advanced SwiftUI implementation with
+                        seamless multi-language support across English, Hindi, and Gujarati interfaces.</p>
+
+                    <h4>Key Features</h4>
+                    <ul class="feature-list">
+                        <li><span class="feature-icon">🌍</span> Multi-language UI (English, Hindi, Gujarati)</li>
+                        <li><span class="feature-icon">📱</span> Modern SwiftUI architecture</li>
+                        <li><span class="feature-icon">🎨</span> Responsive design for all devices</li>
+                        <li><span class="feature-icon">⚡</span> Performance optimized with lazy loading</li>
+                        <li><span class="feature-icon">🔄</span> Real-time data integration</li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <span class="tech">Swift</span>
+                        <span class="tech">SwiftUI</span>
+                        <span class="tech">Localization</span>
+                        <span class="tech">MVVM</span>
+                        <span class="tech">Combine</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Barclays Project -->
-            <div class="project-card">
-                <div class="project-header">
+            <!-- Project 2: Barclays -->
+            <div class="project-showcase alternate">
+                <div class="project-visual barclays">
+                    <div class="metrics-display">
+                        <div class="metric">
+                            <div class="metric-value">2.5M</div>
+                            <div class="metric-label">Active Users</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">-22%</div>
+                            <div class="metric-label">Failed Payments</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">4.5⭐</div>
+                            <div class="metric-label">App Rating</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">-40%</div>
+                            <div class="metric-label">Build Time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-details">
                     <h3>Barclays Digital Payment Platform</h3>
-                    <p class="project-role">Lead iOS Engineer @ Capgemini (2023 - Present)</p>
-                </div>
+                    <p class="project-type">Lead iOS Engineer @ Capgemini (2023 - Present)</p>
+                    <p>Architected and shipped 3 critical payment flows serving 2.5M+ active users. Redesigned CI/CD
+                        pipeline for 40% faster deployments and established engineering practices that reduced
+                        production bugs by 31%.</p>
 
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Impact</h4>
-                        <ul>
-                            <li>🎯 Architected 3 critical payment flows serving <strong>2.5M+ active users</strong></li>
-                            <li>📉 Reduced payment transaction failures by <strong>22%</strong> through retry logic
-                                optimization</li>
-                            <li>⚡ Improved app rating from <strong>4.1 → 4.5 stars</strong> through performance
-                                optimization</li>
-                            <li>🚀 Cut CI/CD build times by <strong>40%</strong> (18 → 11 mins)</li>
-                            <li>🔐 Ensured <strong>PSD2 compliance</strong> and OAuth 2.0 security</li>
-                        </ul>
+                    <h4>Key Achievements</h4>
+                    <ul class="feature-list">
+                        <li><span class="feature-icon">💳</span> 3 critical payment flows with PSD2 compliance</li>
+                        <li><span class="feature-icon">🚀</span> 40% reduction in build times (18→11 mins)</li>
+                        <li><span class="feature-icon">📊</span> 22% reduction in transaction failures</li>
+                        <li><span class="feature-icon">⚡</span> 35% app startup time improvement</li>
+                        <li><span class="feature-icon">👥</span> Mentored 4 engineers (3 promoted)</li>
+                        <li><span class="feature-icon">🐛</span> 31% bug reduction, 82% test coverage</li>
+                    </ul>
 
-                        <h4>Responsibilities</h4>
-                        <ul>
-                            <li>Led mentorship program for 4 junior-to-senior engineers (3 promoted in 18 months)</li>
-                            <li>Redesigned CI/CD pipeline using Fastlane & Jenkins (40% faster builds)</li>
-                            <li>Reduced app startup time by 2.8s (35% improvement)</li>
-                            <li>Established code review culture: 31% bug reduction, 82% test coverage</li>
-                            <li>Automated App Store deployment reducing human error by 95%</li>
-                        </ul>
-
-                        <h4>Tech Stack</h4>
-                        <p>
-                            <span class="tech-badge">Swift</span>
-                            <span class="tech-badge">SwiftUI</span>
-                            <span class="tech-badge">MVVM</span>
-                            <span class="tech-badge">Fastlane</span>
-                            <span class="tech-badge">Jenkins</span>
-                            <span class="tech-badge">OAuth 2.0</span>
-                            <span class="tech-badge">PSD2</span>
-                        </p>
+                    <div class="tech-stack">
+                        <span class="tech">Swift</span>
+                        <span class="tech">SwiftUI</span>
+                        <span class="tech">MVVM</span>
+                        <span class="tech">Fastlane</span>
+                        <span class="tech">Jenkins</span>
+                        <span class="tech">OAuth 2.0</span>
                     </div>
                 </div>
             </div>
 
-            <!-- HSBC Project -->
-            <div class="project-card">
-                <div class="project-header">
+            <!-- Project 3: HSBC -->
+            <div class="project-showcase">
+                <div class="project-visual hsbc">
+                    <div class="transaction-flow">
+                        <div class="flow-item">
+                            <div class="flow-icon">📱</div>
+                            <div class="flow-arrow">→</div>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">🔐</div>
+                            <div class="flow-arrow">→</div>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">📡</div>
+                            <div class="flow-arrow">→</div>
+                        </div>
+                        <div class="flow-item">
+                            <div class="flow-icon">✅</div>
+                        </div>
+                        <div class="performance-badge">99.8% Delivery</div>
+                    </div>
+                </div>
+
+                <div class="project-details">
                     <h3>HSBC Retail Banking Platform</h3>
-                    <p class="project-role">Software Consultant @ Capgemini (2022 - 2023)</p>
-                </div>
+                    <p class="project-type">Software Consultant @ Capgemini (2022 - 2023)</p>
+                    <p>Built foundational iOS architecture handling 500K+ daily transactions. Implemented real-time
+                        notifications with 99.8% delivery rate and <200ms latency. Conducted security audits fixing 8
+                            critical vulnerabilities.</p>
 
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Impact</h4>
-                        <ul>
-                            <li>🏗️ Built foundational iOS architecture handling <strong>500K+ daily
-                                    transactions</strong></li>
-                            <li>👥 Established patterns adopted by 2 concurrent teams (<strong>12+ engineers</strong>)
-                            </li>
-                            <li>📡 Implemented real-time notifications: <strong>99.8% delivery rate</strong>, <strong>
-                                    <200ms latency</strong>
-                            </li>
-                            <li>🔒 Conducted security audits: identified & remediated <strong>8 critical
-                                    vulnerabilities</strong></li>
-                        </ul>
+                            <h4>Key Contributions</h4>
+                            <ul class="feature-list">
+                                <li><span class="feature-icon">🏗️</span> SwiftUI architecture for 12+ engineers</li>
+                                <li><span class="feature-icon">📡</span> Real-time notifications (99.8% delivery,
+                                    <200ms)< /li>
+                                <li><span class="feature-icon">🔒</span> Security audits: 8 critical vulnerabilities
+                                    fixed</li>
+                                <li><span class="feature-icon">500K</span> Daily transactions handled</li>
+                                <li><span class="feature-icon">🎯</span> Established patterns adopted by all teams</li>
+                            </ul>
 
-                        <h4>Key Contributions</h4>
-                        <ul>
-                            <li>SwiftUI architecture design for scalable retail banking platform</li>
-                            <li>Real-time transaction notifications using WebSockets & Combine framework</li>
-                            <li>OAuth 2.0 and encryption implementation with comprehensive security audits</li>
-                            <li>Created architectural patterns that became standard across teams</li>
-                        </ul>
-
-                        <h4>Tech Stack</h4>
-                        <p>
-                            <span class="tech-badge">Swift</span>
-                            <span class="tech-badge">SwiftUI</span>
-                            <span class="tech-badge">MVVM</span>
-                            <span class="tech-badge">Combine</span>
-                            <span class="tech-badge">WebSockets</span>
-                            <span class="tech-badge">OAuth 2.0</span>
-                        </p>
-                    </div>
+                            <div class="tech-stack">
+                                <span class="tech">Swift</span>
+                                <span class="tech">SwiftUI</span>
+                                <span class="tech">MVVM</span>
+                                <span class="tech">Combine</span>
+                                <span class="tech">WebSockets</span>
+                                <span class="tech">OAuth 2.0</span>
+                            </div>
                 </div>
             </div>
 
-            <!-- Stocktake Online Project -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Stocktake Online - Inventory Management</h3>
-                    <p class="project-role">iOS Engineer (2019 - 2021)</p>
-                </div>
-
-                <div class="project-content">
-                    <div class="project-description">
-                        <h4>Impact</h4>
-                        <ul>
-                            <li>📊 Shipped inventory management app with <strong>2.0M+ downloads</strong></li>
-                            <li>💾 Architected offline-first sync using Core Data & background tasks</li>
-                            <li>⚙️ Optimized memory footprint by <strong>28%</strong> enabling 2GB RAM devices</li>
-                            <li>📈 Improved 7-day user retention by <strong>18%</strong> with push notifications</li>
-                        </ul>
-
-                        <h4>Key Achievements</h4>
-                        <ul>
-                            <li>Offline-first synchronization system for seamless inventory tracking</li>
-                            <li>FCM integration for push notifications improving user engagement</li>
-                            <li>Memory optimization through lazy collection loading and strategic caching</li>
-                            <li>Full product lifecycle from architecture to App Store deployment</li>
-                        </ul>
-
-                        <h4>Tech Stack</h4>
-                        <p>
-                            <span class="tech-badge">Swift</span>
-                            <span class="tech-badge">Core Data</span>
-                            <span class="tech-badge">FCM</span>
-                            <span class="tech-badge">Background Sync</span>
-                        </p>
+            <!-- Project 4: Stocktake -->
+            <div class="project-showcase alternate">
+                <div class="project-visual stocktake">
+                    <div class="download-badge">2M+ Downloads</div>
+                    <div class="feature-showcase">
+                        <div class="showcase-item">
+                            <span class="icon">📦</span>
+                            <span class="label">Inventory</span>
+                        </div>
+                        <div class="showcase-item">
+                            <span class="icon">💾</span>
+                            <span class="label">Offline Sync</span>
+                        </div>
+                        <div class="showcase-item">
+                            <span class="icon">🎯</span>
+                            <span class="label">Real-time</span>
+                        </div>
+                        <div class="showcase-item">
+                            <span class="icon">⚡</span>
+                            <span class="label">Fast</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="project-details">
+                    <h3>Stocktake Online - Inventory Management</h3>
+                    <p class="project-type">iOS Engineer (2019 - 2021)</p>
+                    <p>Shipped inventory management app with 2M+ downloads. Architected offline-first sync system and
+                        optimized memory footprint by 28%, enabling app to run on 2GB RAM devices. Improved 7-day
+                        retention by 18%.</p>
+
+                    <h4>Key Achievements</h4>
+                    <ul class="feature-list">
+                        <li><span class="feature-icon">📊</span> 2M+ downloads shipped</li>
+                        <li><span class="feature-icon">💾</span> Offline-first sync architecture</li>
+                        <li><span class="feature-icon">⚙️</span> 28% memory optimization</li>
+                        <li><span class="feature-icon">📈</span> 18% improvement in user retention</li>
+                        <li><span class="feature-icon">📱</span> Supports 2GB RAM devices</li>
+                    </ul>
+
+                    <div class="tech-stack">
+                        <span class="tech">Swift</span>
+                        <span class="tech">Core Data</span>
+                        <span class="tech">FCM</span>
+                        <span class="tech">Background Sync</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>iOS Development</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">SwiftUI</span>
-                        <span class="skill-tag">Objective-C</span>
-                        <span class="skill-tag">UIKit</span>
-                        <span class="skill-tag">Xcode</span>
+            <h2 class="section-title">Technical Expertise</h2>
+
+            <div class="skills-showcase">
+                <div class="skill-group">
+                    <h3 class="skill-group-title">iOS Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Swift</div>
+                            <div class="skill-level" style="--level: 95%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">SwiftUI</div>
+                            <div class="skill-level" style="--level: 92%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">UIKit</div>
+                            <div class="skill-level" style="--level: 88%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Combine</div>
+                            <div class="skill-level" style="--level: 90%"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h4>Architecture & Design</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MVVM</span>
-                        <span class="skill-tag">MVC</span>
-                        <span class="skill-tag">System Design</span>
-                        <span class="skill-tag">Dependency Injection</span>
-                        <span class="skill-tag">Design Patterns</span>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Architecture & Design</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">MVVM</div>
+                            <div class="skill-level" style="--level: 95%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">System Design</div>
+                            <div class="skill-level" style="--level: 93%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Performance</div>
+                            <div class="skill-level" style="--level: 91%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Code Review</div>
+                            <div class="skill-level" style="--level: 94%"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h4>Frameworks & Libraries</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Combine</span>
-                        <span class="skill-tag">Core Data</span>
-                        <span class="skill-tag">Alamofire</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">RxSwift</span>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">DevOps & Tools</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Fastlane</div>
+                            <div class="skill-level" style="--level: 90%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Jenkins</div>
+                            <div class="skill-level" style="--level: 88%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Git</div>
+                            <div class="skill-level" style="--level: 92%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Xcode</div>
+                            <div class="skill-level" style="--level: 94%"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h4>Performance & Tools</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Performance Optimization</span>
-                        <span class="skill-tag">Memory Management</span>
-                        <span class="skill-tag">Profiling</span>
-                        <span class="skill-tag">Debugging</span>
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Security & Compliance</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">OAuth 2.0</div>
+                            <div class="skill-level" style="--level: 92%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Encryption</div>
+                            <div class="skill-level" style="--level: 89%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">PSD2</div>
+                            <div class="skill-level" style="--level: 90%"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Security Audits</div>
+                            <div class="skill-level" style="--level: 88%"></div>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h4>DevOps & CI/CD</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Fastlane</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Build Automation</span>
-                        <span class="skill-tag">Code Coverage</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Security & Compliance</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OAuth 2.0</span>
-                        <span class="skill-tag">PSD2 Compliance</span>
-                        <span class="skill-tag">Encryption</span>
-                        <span class="skill-tag">Security Audits</span>
-                        <span class="skill-tag">Secure Coding</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Leadership</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Mentorship</span>
-                        <span class="skill-tag">Code Reviews</span>
-                        <span class="skill-tag">Architecture Reviews</span>
-                        <span class="skill-tag">Technical Writing</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4>Languages</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">English (Fluent)</span>
-                        <span class="skill-tag">Hindi (Fluent)</span>
-                        <span class="skill-tag">Gujarati</span>
-                    </div>
+            <div class="core-competencies">
+                <h3>Core Competencies</h3>
+                <div class="competency-tags">
+                    <span class="tag">iOS Development</span>
+                    <span class="tag">Swift/SwiftUI</span>
+                    <span class="tag">System Architecture</span>
+                    <span class="tag">Performance Optimization</span>
+                    <span class="tag">Team Leadership</span>
+                    <span class="tag">Technical Mentoring</span>
+                    <span class="tag">Mobile Banking</span>
+                    <span class="tag">CI/CD Pipeline</span>
+                    <span class="tag">Security Architecture</span>
+                    <span class="tag">Code Review Culture</span>
+                    <span class="tag">Fintech Platforms</span>
+                    <span class="tag">Real-time Systems</span>
                 </div>
             </div>
         </div>
@@ -414,38 +527,44 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">I'm always interested in hearing about new projects and opportunities.</p>
+            <p class="contact-subtitle">I'm always interested in discussing new projects and opportunities</p>
 
             <div class="contact-grid">
-                <div class="contact-card">
-                    <h4>📧 Email</h4>
-                    <a href="mailto:viralshah912@outlook.com">viralshah912@outlook.com</a>
-                </div>
+                <a href="mailto:viralshah912@outlook.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>viralshah912@outlook.com</p>
+                </a>
 
-                <div class="contact-card">
-                    <h4>📞 Phone</h4>
-                    <a href="tel:+918264834259">+91-8264834259</a>
-                </div>
+                <a href="tel:+918264834259" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>+91 8264 834 259</p>
+                </a>
 
-                <div class="contact-card">
-                    <h4>🔗 LinkedIn</h4>
-                    <a href="https://linkedin.com/in/viralshah-93a2b0174" target="_blank">linkedin.com/in/viralshah</a>
-                </div>
+                <a href="https://linkedin.com/in/viralshah-93a2b0174" target="_blank" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                </a>
 
-                <div class="contact-card">
-                    <h4>📝 Medium Blog</h4>
-                    <a href="https://medium.com/@viralswift" target="_blank">@viralswift</a>
-                </div>
+                <a href="https://medium.com/@viralswift" target="_blank" class="contact-card">
+                    <div class="contact-icon">📝</div>
+                    <h3>Medium</h3>
+                    <p>Read my articles</p>
+                </a>
 
-                <div class="contact-card">
-                    <h4>💻 GitHub</h4>
-                    <a href="https://github.com/viralshah912" target="_blank">github.com/viralshah912</a>
-                </div>
+                <a href="https://github.com/viralshah912" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <h3>GitHub</h3>
+                    <p>View my code</p>
+                </a>
 
-                <div class="contact-card">
-                    <h4>📄 Resume</h4>
-                    <a href="assets/Viral_Shah_Resume_iOS.pdf" download>Download PDF</a>
-                </div>
+                <a href="assets/Viral_Shah_Resume_iOS.pdf" download class="contact-card">
+                    <div class="contact-icon">📄</div>
+                    <h3>Resume</h3>
+                    <p>Download PDF</p>
+                </a>
             </div>
         </div>
     </section>
@@ -454,8 +573,8 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Viral Shah. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 14px; opacity: 0.7;">
-                Crafted with ❤️ | Last updated: May 2024
+            <p style="margin-top: 10px; font-size: 13px; opacity: 0.6;">
+                Crafted with ❤️ | iOS Engineer | Technical Leadership | Banking & Fintech
             </p>
         </div>
     </footer>
